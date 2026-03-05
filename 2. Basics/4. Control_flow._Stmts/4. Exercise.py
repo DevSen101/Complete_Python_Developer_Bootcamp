@@ -19,6 +19,7 @@ picture = [
 #             print(empty, end=empty)
 #     print(" ")
 
+# ---------------------------------------
 
 # (2) Check the duplicates in list
 
