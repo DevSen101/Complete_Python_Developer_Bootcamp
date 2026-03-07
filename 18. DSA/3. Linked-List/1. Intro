@@ -1,0 +1,5 @@
+Linked-List -> its is not contigues in memory, but all nodes points to the next node memory address. first node pointed by a variable head, and last node point by tail. last node points to none.
+ 
+ head              tail
+  |                 |
+  11 -> 15 -> 26 -> 8 -> None
