@@ -28,8 +28,24 @@ class LinkedList:
         self.length += 1
 
 
-my_linked_list = LinkedList(1)
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        self.head = self.head.next
+        temp.next = None
+        self.length -= 1
+        if self.length == 0:
+            self.tail = None
+        return temp.value
 
-my_linked_list.append(2)
 
-my_linked_list.print_list()
+my_linked_list = LinkedList(2)
+my_linked_list.append(1)
+
+# (2) Items return 2 Node
+print(my_linked_list.pop_first())
+# (1) Items return 1 Node
+print(my_linked_list.pop_first())
+# (0) Items return 0 Node
+print(my_linked_list.pop_first())
