@@ -1,0 +1,4 @@
+Stack --> works on LIFO (Last In First Out), we can add and remove items in the stack . and can only access the last item. adding and removing an item from the stack is called push and pop from the stack.
+
+
+Queue --> works on FIFO (First In First Out), we can add and remove items in the Queue. but we can add from one end and remove from other end. adding and removing is called Enqueue and Dequeue. 
