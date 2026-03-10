@@ -1,0 +1,18 @@
+Tree -> We can take tree as a Linked List which has some nodes. one is called parent node and their nodes called child. child with same nodes are called siblings. child node can also be parent node for their child. node with no child is a leaf node. first node is called root.
+
+Binary Tree -> has only two nodes.  
+
+Full Binary Tree:
+A binary tree in which every node has either 0 or 2 children.
+
+Complete Binary Tree:
+A binary tree in which all levels are completely filled except possibly the last, and nodes are filled from left to right.
+
+Perfect Binary Tree:
+A binary tree in which all internal nodes have 2 children and all leaf nodes are at the same level (all levels completely filled).
+
+--------------
+
+Binary Search Tree -> In BST, Left node always be less than parent node and Right node always be greater than parent node.
+
+the best case scenerio in BST. for insert(), lookup(), remove() is O(logn). and worst case is O(n).
