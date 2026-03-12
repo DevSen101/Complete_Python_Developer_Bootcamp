@@ -1,0 +1,49 @@
+Hash Tables :-
+A hash table is a data structure that stores data in **key–value pairs** and allows very fast searching, inserting, and deleting of data.
+
+Hash Function:-
+A hash function is a function that converts a key into a numeric index of an array where the data will be stored.
+
+Simple Example:-
+Suppose we want to store student marks.
+
+* Key: Student ID = `123`
+* Hash function: `index = ID % 10`
+
+So,
+
+`123 % 10 = 3`
+
+The value (marks) will be stored at **index 3** in the hash table.
+
+Example Table
+
+| Index | Data            |
+| ----- | --------------- |
+| 0     | —               |
+| 1     | —               |
+| 2     | —               |
+| 3     | Marks of ID 123 |
+| 4     | —               |
+
+So the hash function decides where the data will be stored in the hash table.
+
+------------------------------------------------
+
+Collision:
+A collision happens in a hash table when **two different keys produce the same index** using the hash function.
+
+Example:
+Hash function: `index = key % 10`
+
+* Key `25 → 25 % 10 = 5`
+* Key `35 → 35 % 10 = 5`
+
+Both go to **index 5**, so a **collision occurs**.
+
+Ways to handle collision:
+
+1. **Chaining** – Store multiple values at the same index using a **linked list**.
+2. **Linear Probing** – If the index is full, move to the **next empty index**.
+3. **Quadratic Probing** – Check positions using **square steps** (1², 2², 3²…).
+4. **Double Hashing** – Use **another hash function** to find a new index.
