@@ -1,0 +1,50 @@
+**Graph (Data Structure) – Simple Introduction**
+
+A **graph** is a **non-linear data structure** used to represent relationships between different objects.
+
+A graph consists of two main components:
+
+1. **Vertices (Nodes)** – These represent the objects or points.
+2. **Edges** – These represent the connections or relationships between the vertices.
+
+Example:
+If we want to represent friendships in a social network:
+
+* Person A
+* Person B
+* Person C
+
+If A is friends with B and C, we can represent it as a graph where people are **vertices** and friendships are **edges**.
+
+Example structure:
+
+```
+A ---- B
+ \
+  \
+   C
+```
+
+Here:
+
+* A, B, C → Vertices
+* Lines between them → Edges
+
+**Types of Graphs**
+
+1. **Undirected Graph** – Connection works both ways.
+   Example: A — B
+
+2. **Directed Graph (Digraph)** – Connection has direction.
+   Example: A → B
+
+3. **Weighted Graph** – Edges have values (distance, cost, etc.).
+
+**Common Uses of Graphs**
+
+* Social networks (friends, followers)
+* Computer networks
+* Maps and GPS navigation
+* Web page linking
+* Recommendation systems
+

@@ -1,0 +1,31 @@
+### Big-O Comparison: Adjacency Matrix vs Adjacency List
+
+| Operation                | Adjacency Matrix | Adjacency List |
+| ------------------------ | ---------------- | -------------- |
+| **Add Vertex**           | O(V²)            | O(1)           |
+| **Add Edge**             | O(1)             | O(1)           |
+| **Remove Edge**          | O(1)             | O(E)           |
+| **Check if Edge Exists** | O(1)             | O(V)           |
+| **Space Complexity**     | O(V²)            | O(V + E)       |
+
+**Where:**
+
+* **V** = Number of vertices
+* **E** = Number of edges
+
+### Simple Understanding
+
+**Adjacency Matrix**
+
+* Uses more **memory**
+* **Faster edge lookup**
+
+**Adjacency List**
+
+* Uses **less memory**
+* Better for **large sparse graphs**
+
+### One Line Summary
+
+* **Adjacency Matrix → Fast edge checking but high memory.**
+* **Adjacency List → Memory efficient but slower edge checking.**
