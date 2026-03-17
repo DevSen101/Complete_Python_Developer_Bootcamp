@@ -1,0 +1,114 @@
+### 🔹 Basic Introduction to Heap
+
+A **Heap** is a special type of **binary tree** that follows these properties:
+
+1. **Complete Binary Tree**
+
+   * All levels are fully filled except possibly the last level.
+   * Last level is filled **from left to right**.
+
+2. **Heap Property**
+
+   * **Max Heap**: Parent node ≥ children
+   * **Min Heap**: Parent node ≤ children
+
+👉 Example (Max Heap):
+
+```
+        50
+       /  \
+     30    40
+    / \   /
+  10  20 35
+```
+
+---
+
+### 🔹 Array Representation of Heap
+
+Heaps are usually stored in **arrays**, not pointers.
+
+Example:
+
+```
+Heap Tree         Array
+   50              [50, 30, 40, 10, 20, 35]
+  /  \
+30   40
+```
+
+---
+
+### 🔹 Indexing: Why Start from 0 or 1?
+
+Heap indexing depends on how we want to calculate **parent and child nodes**.
+
+---
+
+## ✅ Case 1: Indexing from **0** (Used in most programming languages)
+
+Array:
+
+```
+Index:  0   1   2   3   4   5
+Value: [50, 30, 40, 10, 20, 35]
+```
+
+Formulas:
+
+* **Left Child** = `2*i + 1`
+* **Right Child** = `2*i + 2`
+* **Parent** = `(i - 1) // 2`
+
+👉 Example:
+
+* For index `0` → children = `1, 2`
+* For index `1` → children = `3, 4`
+
+✔️ Why use 0?
+
+* Arrays in languages like **C, Java, Python** start from index **0**
+* No wasted space
+
+---
+
+## ✅ Case 2: Indexing from **1** (Used in theory / textbooks)
+
+Array:
+
+```
+Index:   1   2   3   4   5   6
+Value:  [50, 30, 40, 10, 20, 35]
+```
+
+Formulas:
+
+* **Left Child** = `2*i`
+* **Right Child** = `2*i + 1`
+* **Parent** = `i // 2`
+
+👉 Example:
+
+* For index `1` → children = `2, 3`
+* For index `2` → children = `4, 5`
+
+✔️ Why use 1?
+
+* **Simpler formulas**
+* Easier to understand mathematically
+
+❌ Drawback:
+
+* Index `0` is unused (waste of space)
+
+---
+
+### 🔥 Key Difference
+
+| Feature          | Index 0 Start    | Index 1 Start   |
+| ---------------- | ---------------- | --------------- |
+| Left Child       | 2i + 1           | 2i              |
+| Right Child      | 2i + 2           | 2i + 1          |
+| Parent           | (i-1)//2         | i//2            |
+| Space Efficiency | Better           | Slight waste    |
+| Usage            | Practical coding | Theory/learning |
