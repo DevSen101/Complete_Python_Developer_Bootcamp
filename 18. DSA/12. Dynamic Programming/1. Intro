@@ -1,0 +1,28 @@
+Dynamic Programming :- two concepts are important for DP.
+ 1. Overlapping Subproblem.   2. Optimized Substructure.
+
+Overlapping Subproblem :- 
+In previous we seen that we distribute a problem or make multiple parts of a problem and then solve all parts of problem seprately and then merge all of them which solve our overall a problem.
+but lets suppose one of that part of problem has 1 trillion operations and we solve that problem. and we know some of the different part of the problem has same output with 1 trillion operation so we save ourself by doing that 1 tillion ops. 
+When we solve one subproblem and know we will use it in future so we store the output in a list.
+:-The process of storing the answers of these subproblems is called memoization.
+
+Short Notes
+
+* Problem can be broken into **repeating (same) subproblems**.
+* Instead of solving again, **store results** → called **memoization**.
+* Saves time: repeated work becomes **O(1) lookup**.
+* Example: Same subproblem gives same result → reuse it.
+* If subproblems are **unique (like Merge Sort)** → NOT suitable for DP.
+* Key idea: avoid recomputation by storing answers.
+
+
+2. Optimized Substructure :-
+**Optimized Substructure (DP Requirement 2) – Short Notes**
+
+* A problem has **optimized substructure** if the optimal solution (सर्वोत्तम समाधान) can be built from optimal solutions of its subproblems.
+*Example: Shortest path → best (A→D) = best (A→B) + best (B→D).
+*If solving subparts optimally gives overall optimal → DP works.
+*If subproblem optimal solutions don’t combine to global optimal → no optimized substructure.
+*DP needs:
+
